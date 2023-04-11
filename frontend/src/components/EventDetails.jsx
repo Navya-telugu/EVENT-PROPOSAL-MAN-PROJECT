@@ -24,11 +24,11 @@ const ProductDetails = () => {
 
   console.log(eventImages);
   useEffect(() => {
-    axios.get("http://localhost:8080/vendorDetails").then((res) => {
+    axios.get("https://main-project-e1gr.onrender.com/vendorDetails").then((res) => {
       setVendorName(res.data.data[0]);
     });
     async function getProductDetails() {
-      await axios.get(`http://localhost:8080/users/${id}`).then((res) => {
+      await axios.get(`https://main-project-e1gr.onrender.com/users/${id}`).then((res) => {
         setProduct(res.data.data[0]);
       setImages(res.data.data[0].images)
       });

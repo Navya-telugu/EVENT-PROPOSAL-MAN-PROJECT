@@ -26,7 +26,7 @@ const UserSignUp = (props) => {
         "content-type": "application/json",
       },
     };
-    axios.post("http://localhost:8080/userRegister", data, config).then((res) => {
+    axios.post("https://main-project-e1gr.onrender.com/userRegister", data, config).then((res) => {
       setData({});
     setErrormsg1("Registration Done Go and SignIn");
     if(res.data.status==="failed"){
