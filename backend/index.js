@@ -11,10 +11,7 @@ const venderRegister = require("./routes/VendorRegister")
 const venderLogin = require("./routes/VendorLogin")
 const jwt = require("jsonwebtoken");
 
-app.use(cors({
-    origin: 'http://localhost:3000',
-    credentials: true
-}));
+app.use(cors());
 
 conn();
 app.use('/',venderRegister)
