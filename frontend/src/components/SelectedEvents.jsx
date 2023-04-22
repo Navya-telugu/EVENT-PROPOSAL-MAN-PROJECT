@@ -23,7 +23,7 @@ const ProductsInCart = () => {
   const [vendorName,setVendorName]=useState([]);
 
   useEffect(()=>{
-    axios.get("https://main-project-e1gr.onrender.com/vendorDetails").then((res) => {
+    axios.get("https://event-backend-p908.onrender.comvendorDetails").then((res) => {
       setVendorName(res.data.data[res.data.data.length-1])})
   })
   // const navigate=useNavigate();

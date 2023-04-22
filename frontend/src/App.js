@@ -14,7 +14,7 @@ function App() {
   useEffect(()=>{
     
     async function getAllProducts(){
-      axios.get("https://main-project-e1gr.onrender.com/proposalsData").then((res)=>{
+      axios.get("https://event-backend-p908.onrender.com/proposalsData").then((res)=>{
         setItems(res.data.data)
         console.log(res.data.data);
       })
